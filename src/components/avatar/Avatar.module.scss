@@ -1,0 +1,24 @@
+@mixin verBadge {
+    content: url('./image/verified.svg')
+};
+
+.avatar {
+    display: flex;
+};
+
+.image {
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+};
+
+.badge {
+    @include verBadge();
+    width:40px;
+    height:40px;
+    position: relative;
+    top: 50px;
+    right: 25px
+};
