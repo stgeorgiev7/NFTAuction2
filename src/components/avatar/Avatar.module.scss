@@ -6,7 +6,8 @@
     display: flex;
 };
 
-.image {
+.avatarimage {
+    padding: 10px;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -17,8 +18,8 @@
 .badge {
     @include verBadge();
     position: relative;
-    top: 50px;
+    top: 30px;
     right: 25px;
-    width:25px;
+    width:35px;
     height:25px
 };
