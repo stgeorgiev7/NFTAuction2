@@ -7,7 +7,7 @@ import { CardMedia } from '@mui/material';
 import mediaImage from './image/nft.jpg';
 import millify from "millify";
 
-export default function Card({name, likes=50, user, mediaUrl, price, currency}) {
+export default function Card({name, likes=0, user, mediaUrl, price, currency}) {
 
     const [img, setImage] = useState(mediaUrl ? mediaUrl: mediaImage.src);
     const [millifiedLikes, setLikes] = useState(millify(likes));
@@ -23,7 +23,7 @@ export default function Card({name, likes=50, user, mediaUrl, price, currency}) 
 
                 </CardMedia>
                 <p className={classNames(styles.nftName)}>{name}</p>
-                <p className={classNames(styles.price)}>{price} {currency}</p>
+                <p className={classNames(styles.price)}>~{price} {currency}</p>
                 <p className={classNames(styles.likes)}>{millifiedLikes}</p>
             </CardContainer>        
         </div>
