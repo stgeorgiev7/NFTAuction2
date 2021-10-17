@@ -12,7 +12,7 @@ export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
       <Head/>
-      <Avatar size={300} verified={true} />
+      <Avatar size={400} verified={true} />
       
       <Container className={classNames(styles.container)} maxWidth="xl">
 

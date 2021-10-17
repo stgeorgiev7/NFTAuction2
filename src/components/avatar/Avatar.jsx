@@ -8,7 +8,7 @@ export default function Avatar({ url, size = { width: '90px', height: '90px' }, 
 
     return (
         <div className={classNames(styles.avatar)} >
-            <img src={avatarPic} style={{ width: size, height: size }} className={classNames(styles.image)} />
+            <img className={classNames(styles.image)}  style={{ width: size, height: size }} src={avatarPic}  />
             {verified ? <span className={classNames(styles.badge)}></span> : null}
         </div>
     )
