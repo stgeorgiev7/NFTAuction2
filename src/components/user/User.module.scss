@@ -1,0 +1,15 @@
+@use '/src/styles/colors.scss';
+
+.user {
+    display: flex;
+    font-weight: 900;
+    
+}
+
+.name {
+
+}
+
+.info {
+    color: colors.$secondary_main;
+}
