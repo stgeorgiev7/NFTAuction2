@@ -3,7 +3,7 @@ import classNames from "classnames";
 import styles from "./Avatar.module.scss";
 import defaultImg from "./image/avatar.png";
 
-export default function Avatar({ url, size = { width: '90px', height: '90px' }, verified = false }) {
+export default function Avatar({ url, size = 90, verified = false }) {
     const [avatarPic, setAvatarPic] = useState(url ? url:defaultImg.src);
 
     return (
