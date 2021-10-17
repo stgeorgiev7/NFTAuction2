@@ -12,7 +12,7 @@ export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
       <Head/>
-      <User name='tarikata' info='130 items' verified={true}/>
+      <User name='tarikata73' info='134 items' verified={true}/>
       
       <Container className={classNames(styles.container)} maxWidth="xl">
 
