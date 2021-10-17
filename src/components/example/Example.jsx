@@ -4,7 +4,7 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Head from "../header/Header";
-import Avatar from "../avatar/Avatar";
+import User from "../user/User";
 
 
 
@@ -12,7 +12,7 @@ export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
       <Head/>
-      <Avatar verified={true} />
+      <User name='tarikata' info='130 items' verified={true}/>
       
       <Container className={classNames(styles.container)} maxWidth="xl">
 
