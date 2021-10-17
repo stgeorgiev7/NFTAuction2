@@ -1,0 +1,26 @@
+@use "../../styles/colors";
+
+.avatarimage {
+    padding: 100px;
+    border: 5px solid red;
+}
+
+.cardImage {
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.price {
+    padding-left: 10px;
+    margin: 0;
+};
+
+.nftName {
+    padding-left: 10px;
+    margin: 0;
+};
+
+.likes {
+    padding-left: 10px
+};
+
