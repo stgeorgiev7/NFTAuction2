@@ -28,7 +28,8 @@ export default function Card({ name, likes = 0, user, mediaUrl, price, currency 
                         <p className={classNames(styles.nftName)}>{name}</p>
                         <p className={classNames(styles.price)}>~{price} {currency}</p>
                     </div>
-                        <p className={classNames(styles.likes)}><FavoriteIcon fontSize={'small'} />  {millifiedLikes}</p> 
+                        <p className={classNames(styles.likes)}> <FavoriteIcon fontSize={'small'} />   
+                        {millifiedLikes}</p> 
                 </div>
 
             </CardContainer>
