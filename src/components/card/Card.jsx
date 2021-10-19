@@ -8,7 +8,7 @@ import mediaImage from './image/nft.jpg';
 import millify from "millify";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-export default function Card({ name, likes = 0, user, mediaUrl, price, currency }) {
+export default function Card({ name, user, likes = 0, mediaUrl, price, currency }) {
 
     const [img, setImage] = useState(mediaUrl ? mediaUrl : mediaImage.src);
     const [millifiedLikes, setLikes] = useState(millify(likes));

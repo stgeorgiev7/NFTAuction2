@@ -4,21 +4,49 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Head from "../header/Header";
-import User from "../user/User";
-import Card from "../card/Card";
+import Trending from "../Trending/Trending";
+import userImage from '../avatar/image/avatar.png'
+import mediaImage from "../card/image/nft.jpg";
 
 
 export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
-      <Head/>
-      <User name='tarikata73' info='134 items' verified={true}/>
-      <Card name='Clock' likes={12340} price='12' currency='ETH' user={{avatarUrl: null, verified:true}}/>
-      
+      <Head />
+      <Trending cards={
+        [
+          {name: "Clock",
+          user: { avatarUrl: userImage.src, verified: true },
+          mediaUrl: mediaImage.src,
+          price: 1,
+          currency: "ETH",
+          },
+          {name: "DOGE",
+          user: { avatarUrl: userImage.src, verified: true },
+          mediaUrl: mediaImage.src,
+          price: 2.3,
+          currency: "ETH",
+          },
+          {name: "BTC",
+          user: { avatarUrl: userImage.src, verified: true },
+          mediaUrl: mediaImage.src,
+          price: 5,
+          currency: "ETH",
+          },
+          {name: "Litecoin",
+          user: {avatarUrl: userImage.src, verified: true},
+          mediaUrl: mediaImage.src,
+          price:10,
+          currency: "ETH",
+          }
+        ]
+      } />
+
+
+
       <Container className={classNames(styles.container)} maxWidth="xl">
 
         <Paper className={classNames(styles.paper)}>
-
           <Link href="/about" color="secondary">
 
           </Link>
