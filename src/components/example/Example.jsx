@@ -4,7 +4,7 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Head from "../header/Header";
-import Trending from "../Trending/Trending";
+import Trending from "../trending/Trending";
 import userImage from '../avatar/image/avatar.png'
 import mediaImage from "../card/image/nft.jpg";
 
