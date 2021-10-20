@@ -7,7 +7,7 @@ import { Container } from '@mui/material';
 import { Select } from '@mui/material';
 import { MenuItem } from '@mui/material';
 
-export default function Trending({ cards }) {
+export default function Trending({ cards=[] }) {
     const [data, setData] = useState(cards);
 
     const cardsData = cards.map(function (nft, index) {

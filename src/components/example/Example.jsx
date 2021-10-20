@@ -43,7 +43,7 @@ export default function Copyright() {
           }
         ]
       } /> */}
-        <Trending cards={[]} />
+        <Trending />
 
 
 
