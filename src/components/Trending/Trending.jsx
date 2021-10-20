@@ -7,34 +7,38 @@ import { Container } from '@mui/material';
 import { Select } from '@mui/material';
 import { MenuItem } from '@mui/material';
 
-export default function Trending({ cards=[] }) {
+export default function Trending({ cards = [] }) {
     const [data, setData] = useState(cards);
 
     const cardsData = cards.map(function (nft, index) {
         return (
             <Grid item key={index} columns={{ xs: 4, sm: 4, md: 4 }}>
-                <Card
-                    name={nft.name}
-                    user={nft.user}
-                    likes={0}
-                    mediaUrl={nft.mediaUrl}
-                    price={nft.price}
-                    currency={nft.currency}
-                >
-                </Card>
+                <Container>
+                    <Card
+                        name={nft.name}
+                        user={nft.user}
+                        likes={0}
+                        mediaUrl={nft.mediaUrl}
+                        price={nft.price}
+                        currency={nft.currency}
+                    >
+                    </Card>
+                </Container >
             </Grid>
 
         );
     });
 
     return (
-        <Grid container justifyContent='center' alignItems='center' columns={4}>
+        <Grid container spacing={5} className={classNames(styles.gridContainer)}>
 
-            <Grid item>
+            <Grid item xs={3} sm={3} md={3}
+                className={classNames(styles.logo)}
+                style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <h1 className={classNames(styles.heading)}>Trending</h1>
             </Grid>
 
-            <Grid item>
+            <Grid item xs={3} sm={4} md={4} >
 
                 <Select value={10}>
                     <MenuItem value={10}>This Week</MenuItem>
@@ -43,7 +47,7 @@ export default function Trending({ cards=[] }) {
                 </Select>
             </Grid>
 
-            <Grid item>
+            <Grid container justifyContent='center' >
                 {cardsData}
             </Grid>
 
