@@ -12,7 +12,7 @@ export default function Trending({ cards }) {
 
     const cardsData = cards.map(function (nft, index) {
         return (
-            <Grid item key={index}>
+            <Grid item key={index} columns={{xs:4, sm:4, md:4}}>
                 <Card
                     name={nft.name}
                     user={nft.user}
@@ -28,9 +28,9 @@ export default function Trending({ cards }) {
     });
 
     return (
-        <Grid container>
+        <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Container>
-                <h1>Trending</h1>
+                <h1 className={classNames(styles.heading)}>Trending</h1>
                 <Select value={10}>
                     <MenuItem value={10}>This Week</MenuItem>
                     <MenuItem value={20}>This Month</MenuItem>

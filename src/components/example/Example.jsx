@@ -13,6 +13,8 @@ export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
       <Head />
+      
+      <Container className={classNames(styles.container)} maxWidth="xl">
       <Trending cards={
         [
           {name: "Clock",
@@ -44,9 +46,10 @@ export default function Copyright() {
 
 
 
-      <Container className={classNames(styles.container)} maxWidth="xl">
-
         <Paper className={classNames(styles.paper)}>
+
+
+
           <Link href="/about" color="secondary">
 
           </Link>
