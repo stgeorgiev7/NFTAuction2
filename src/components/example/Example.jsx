@@ -15,7 +15,7 @@ export default function Copyright() {
       <Head />
       
       <Container className={classNames(styles.container)} maxWidth="xl">
-      <Trending cards={
+      {/* <Trending cards={
         [
           {name: "Clock",
           user: { avatarUrl: userImage.src, verified: true },
@@ -42,7 +42,8 @@ export default function Copyright() {
           currency: "ETH",
           }
         ]
-      } />
+      } /> */}
+        <Trending cards={[]} />
 
 
 

@@ -14,7 +14,7 @@ export default function Card({ name, user, likes = 0, mediaUrl, price, currency 
     const [millifiedLikes, setLikes] = useState(millify(likes));
 
     return (
-        <div className={classNames(styles.cardContainer)}>
+        
             <CardContainer sx={{ maxWidth: 300 }}>
                 <Avatar url={user.avatarUrl} size={50} verified={user.verified} />
                 <CardMedia
@@ -33,6 +33,6 @@ export default function Card({ name, user, likes = 0, mediaUrl, price, currency 
                 </div>
 
             </CardContainer>
-        </div>
+        
     )
 }
