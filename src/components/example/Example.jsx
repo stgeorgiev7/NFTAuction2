@@ -13,43 +13,44 @@ export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
       <Head />
-      
-      <Container className={classNames(styles.container)} maxWidth="xl">
-      {/* <Trending cards={
+      <Trending cards={
         [
-          {name: "Clock",
-          user: { avatarUrl: userImage.src, verified: true },
-          mediaUrl: mediaImage.src,
-          price: 1,
-          currency: "ETH",
+          {
+            name: "Clock",
+            user: { avatarUrl: userImage.src, verified: true },
+            mediaUrl: mediaImage.src,
+            price: 1,
+            currency: "ETH",
           },
-          {name: "DOGE",
-          user: { avatarUrl: userImage.src, verified: true },
-          mediaUrl: mediaImage.src,
-          price: 2.3,
-          currency: "ETH",
+          {
+            name: "DOGE",
+            user: { avatarUrl: userImage.src, verified: true },
+            mediaUrl: mediaImage.src,
+            price: 2.3,
+            currency: "ETH",
           },
-          {name: "BTC",
-          user: { avatarUrl: userImage.src, verified: true },
-          mediaUrl: mediaImage.src,
-          price: 5,
-          currency: "ETH",
+          {
+            name: "BTC",
+            user: { avatarUrl: userImage.src, verified: true },
+            mediaUrl: mediaImage.src,
+            price: 5,
+            currency: "ETH",
           },
-          {name: "Litecoin",
-          user: {avatarUrl: userImage.src, verified: true},
-          mediaUrl: mediaImage.src,
-          price:10,
-          currency: "ETH",
+          {
+            name: "Litecoin",
+            user: { avatarUrl: userImage.src, verified: true },
+            mediaUrl: mediaImage.src,
+            price: 10,
+            currency: "ETH",
           }
         ]
-      } /> */}
-        <Trending />
+      } />
+      {/* <Trending /> */}
 
+      <Container className={classNames(styles.container)} maxWidth="xl">
 
 
         <Paper className={classNames(styles.paper)}>
-
-
 
           <Link href="/about" color="secondary">
 
