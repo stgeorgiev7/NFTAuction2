@@ -32,8 +32,7 @@ export default function Trending({ cards = [] }) {
     return (
         <Grid container spacing={5} className={classNames(styles.gridContainer)}>
 
-            <Grid item xs={3} sm={3} md={3}
-                className={classNames(styles.logo)}
+            <Grid item xs={3} sm={3} md={3} 
                 style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <h1 className={classNames(styles.heading)}>Trending</h1>
             </Grid>
