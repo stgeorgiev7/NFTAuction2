@@ -16,7 +16,7 @@ export default function Card({ name, user, likes = 0, mediaUrl, price, currency 
 
     return (
 
-        <CardContainer sx={{ maxWidth: 300 }}>
+        <CardContainer sx={{ maxWidth: 270 }}>
            <Avatar url={user.avatarUrl} size={50} verified={user.verified} />
             <CardMedia
                 component="img"
@@ -26,7 +26,7 @@ export default function Card({ name, user, likes = 0, mediaUrl, price, currency 
             </CardMedia>
             <div className={classNames(styles.infoContainer)}>
                 <div>
-                    <p className={classNames(styles.card_title)}>{name}</p>
+                    <p className={classNames(styles.Card_title)}>{name}</p>
                     <p className={classNames(styles.price)}>~{price} {currency}</p>
                 </div>
                 <p className={classNames(styles.likes)}> <FavoriteIcon fontSize={'small'} />
