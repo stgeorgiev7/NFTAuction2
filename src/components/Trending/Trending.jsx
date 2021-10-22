@@ -13,7 +13,7 @@ export default function Trending({ cards = [] }) {
     const cardsData = cards.map(function (nft, index) {
         return (
             <Grid item key={index} columns={{ xs: 4, sm: 4, md: 4 }}>
-                <Container>
+                <Container style={{padding:'10px'}}>
                     <Card
                         name={nft.name}
                         user={nft.user}
@@ -30,23 +30,23 @@ export default function Trending({ cards = [] }) {
     });
 
     return (
-        <Grid container spacing={5} className={classNames(styles.gridContainer)}>
+        <Grid container  className={classNames(styles.gridContainer)}>
 
-            <Grid item xs={3} sm={3} md={3} 
-                style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <Grid item xs={3} sm={3} md={3}
+                style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '30px'}}>
                 <h1 className={classNames(styles.heading)}>Trending</h1>
             </Grid>
 
-            <Grid item xs={3} sm={4} md={4} >
+            <Grid item xs={7} sm={7} md={7} justifyContent='flex-end' style={{display:'flex', padding:0, marginLeft: '30px'}}>
 
-                <Select value={10}>
+                <Select value={10} className={classNames(styles.select)} style={{border:'none'}} >
                     <MenuItem value={10}>This Week</MenuItem>
                     <MenuItem value={20}>This Month</MenuItem>
                     <MenuItem value={30}>This Year</MenuItem>
                 </Select>
             </Grid>
 
-            <Grid container justifyContent='center' >
+            <Grid container justifyContent='center'>
                 {cardsData}
             </Grid>
 
